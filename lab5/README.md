@@ -1,6 +1,6 @@
-#Lab 5: Accelerate your application
+# Lab 5: Accelerate your application
 
-##Introduction
+## Introduction
 
 In this lab, you will learn about how to accelerate long running queries using **MySQL HeatWave**, the fastest hybrid database engine for both OLTP and OLAP workloads
 
