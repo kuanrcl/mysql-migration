@@ -8,11 +8,11 @@ Estimated lab time: 10 minutes
 
 ## Task 1: Create Compartment
 
-1. Log in to **OCI** and navigate to **Compartment**
+1. Log in to **OCI** and click on the hamburger menu at the top left corner of the OCI console, and type **Compartment** in the search box. Click on the **Compartments**
 
 ![compartment](images/compartment.png)
 
-2. Specify the name of the compartment such as **PHP_Compartment** with a description, click on **Create Compartment**
+2. Specify the name of the compartment such as **PHP-Compartment** with a description, click on **Create Compartment**
 
 ![create compartment](images/create_compartment.png)
 
