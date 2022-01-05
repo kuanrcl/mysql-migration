@@ -1,6 +1,6 @@
 # Migrate your PHP app to MDS HeatWave and Oracle Cloud Infrastructure (OCI) 
 
-This workshop walks you through the steps to provision **OCI** resources to host your on-premises PHP application, load data into **MySQL Database Service**, accelerate your long running queries with **MySQL HeatWave** engine
+This workshop walks you through the steps to provision **OCI** resources to host your on-premises PHP application, load data into **MySQL Database Service (MDS)**, accelerate your long running queries with **MySQL HeatWave** engine
 
 ## Who Should Do This Workshop
 
@@ -30,7 +30,7 @@ Estimated Workshop Time: 90 minutes
   - Create Kubernetes Cluster and Worker Nodes
   - Create MySQL Database System
 
-[Lab 3: Upload data to MySQL](lab3/README.md)
+[Lab 3: Upload data to MySQL Database System (MDS)](lab3/README.md)
 
 - Use **mysqlsh** to import data to **MySQL Database System**
 
