@@ -1,9 +1,7 @@
-# Lab 3: Upload data to MDS
+# Lab 3: Upload data to MySQL Database System
 
 ## Introduction
-Before you start to provision any OCI resources, it is a good practice to create a **compartment** as an isolated environment for your work. 
-In this lab, we will create a compartment for all the OCI resources required to host our PHP application
-
+**MySQL Database System (MDS)** is a cloud-native database service 
 Estimated lab time: 10 minutes
 
 ## Task 1: Create Compartment
