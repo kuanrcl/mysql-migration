@@ -11,9 +11,9 @@ Navigate to your **MDSInstance** and select **enable heatware cluster**
 
 ## It works
 
-You just created uploaded airportdb data into **MDS**
+You just turn on the turbo engine on MDS!
 
-## Congratulations, you are ready for the next Lab!
+## Congratulations, you are ready to move to the next lab
 
-[Home](../README.md) | [**Go to Lab 6 >>>>>**](../lab6/README.md)
+[Home](../README.md) | [**Go to Lab 7 >>>>>**](../lab7/README.md)
 
