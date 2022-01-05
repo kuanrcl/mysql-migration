@@ -7,6 +7,7 @@ Estimated lab time: 10 minutes
 
 ## Create Compartment
 
+1. Log in to **OCI** and navigate to **Compartment**
 
 
 
