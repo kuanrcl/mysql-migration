@@ -9,7 +9,7 @@ Estimated lab time:
 
 ## It works
 
-You just created uploaded airportdb data into **MDS**
+You just provisioned OCI resources!
 
 ## Congratulations, you are ready for the next Lab!
 
