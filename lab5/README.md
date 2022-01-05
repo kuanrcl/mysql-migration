@@ -13,7 +13,7 @@ Navigate to your **MDSInstance** and select **enable heatware cluster**
 
 You just turn on the turbo engine on MDS!
 
-## Congratulations, you are ready to move to the next lab
+## Congratulations, you are ready for the next lab
 
-[Home](../README.md) | [**Go to Lab 7 >>>>>**](../lab7/README.md)
+[Home](../README.md) | [**Go to Lab 6 >>>>>**](../lab6/README.md)
 
