@@ -1,18 +1,21 @@
 # Lab 3: Upload data to MySQL Database System
 
 ## Introduction
-**MySQL Database System (MDS)** is a cloud-native database service 
+**MySQL Database System (MDS)** is a fully-managed cloud-native database service based on the MySQL Enterprise Edition. 
+
+In this lab, we will walk you through the steps to upload the data into **MDS** using mysql shell.
+
 Estimated lab time: 10 minutes
 
-## Task 1: Create Compartment
+## Task 1: Connect to Bastion Host
 
-1. Log in to **OCI** and click on the <a href="#menu">&#9776; hamburger menu</a> at the top left corner of the OCI console, and type **compartment** in the search box. Click on the **Compartments** in the search result
+1. Log in to **OCI** and click on the <a href="#menu">&#9776; hamburger menu</a> at the top left corner of the OCI console, and select **Compute**, anc click on **Instances**
 
-![compartment](images/compartment.png)
+![compute-menu](images/compute-menu.png)
 
-2. Specify the name of the compartment such as **PHP-Compartment** with a description, click on **Create Compartment**
+2. Find out the **Public IP** of the compute instance **oke-operator**, we will need this to connect to the compute instance to load the data into **MDS**
 
-![create compartment](images/create_compartment.png)
+![ccompute-ip](images/compute-ip.png)
 
 ## It works
 
