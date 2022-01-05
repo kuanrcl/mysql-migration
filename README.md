@@ -26,10 +26,10 @@ Estimated Workshop Time: 90 minutes.
 [Lab 2: Provision OCI resources](lab2/README.md)
 
 - Use Resource Manager to create OCI resources
-..- Create Virtual Cloud Network
-..- Create Bastion Host
-..- Create Kubernetes Cluster and Worker Nodes
-..- Create MySQL Database System
+  - Create Virtual Cloud Network
+  - Create Bastion Host
+  - Create Kubernetes Cluster and Worker Nodes
+  - Create MySQL Database System
 
 [Lab 3: Upload data to MySQL](lab3/README.md)
 
