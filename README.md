@@ -28,19 +28,23 @@ Estimated Workshop Time: 90 minutes.
 - Use Resource Manager to create OCI resources
 ..- Create Virtual Cloud Network
 ..- Create Bastion Host
-..- Create Compute Instances
+..- Create Kubernetes Cluster and Worker Nodes
 ..- Create MySQL Database System
 
 [Lab 3: Upload data to MySQL](lab3/README.md)
 
 - Use **mysqlsh** to import data to **MySQL Database System**
 
-[Lab 4: Accelerate your application](lab4/README.md)
+[Lab 4: Deploy application on Kubernetes](lab4/README.md)
+
+- Use **mysqlsh** to import data to **MySQL Database System**
+
+[Lab 5: Accelerate your application](lab5/README.md)
 
 - Enable MySQL HeatWave
 - Accelerate your long running queries
 
-[Lab 5: Test migrated PHP application](lab5/README.md)
+[Lab 6: Test migrated PHP application](lab6/README.md)
 
 - Test the migrated PHP application
 
