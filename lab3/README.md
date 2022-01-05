@@ -49,7 +49,7 @@ ls
 ![MDS Menu](images/MDS-menu.png)
 
 7. Select the provisioned MDS instance, **MDSInstance**
-![MDS Details](images/MDS-Details.png)
+![MDS Details](images/MDS-details.png)
 
 8. Find out the private ip of **MDSInstance**
 ![MDS Private IP](images/MDS-IP.png)
@@ -57,8 +57,25 @@ ls
 10. Connect to MDS instance
 
 ```
+cd /home/opc/airport-db
 mysqlsh --user=admin --password=**PASSWORD** --host=<mysql_private_ip_address> --port=3306 --js
 ```
+
+11. Load data 
+
+We will first simulate the data loading to make sure that we are able to load the data without any errors. Note the flag **dryRun** to simulate the data loadning without executing the actual data loading
+```
+util.loadDump("/home/opc/airport-db", {dryRun: true, resetProgress:true, ignoreVersion:true})
+```
+![Load DryRun](images/load-dryrun.png)
+
+If the command completes without any error, we will execute the data loading by setting the **dryRun** flag to false
+
+```
+util.loadDump("/home/opc/airport-db", {dryRun: false, threads: 8, resetProgress:true, ignoreVersion:true})
+```
+
+It will take less than 30 minutes to complete the data loading
 
 ## It works
 
