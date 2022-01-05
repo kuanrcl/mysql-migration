@@ -12,11 +12,15 @@ Estimated lab time: 10 minutes
 
 ![compartment](images/compartment.png)
 
-2. Specify the name of the compartment such as **PHP-Compartment** with a description, click on **Create Compartment**
+2. Specify the name of the compartment such as **PHP_Compartment** with a description, click on **Create Compartment**
 
 ![create compartment](images/create_compartment.png)
 
-Alright, you are done and ready to move to Lab 2
+## It works
+
+You just created a compartment!
+
+## Congratulations, you are ready for the next Lab!
 
 [Home](../README.md) | [**Go to Lab 2 >>>>>**](../lab2/README.md)
 
