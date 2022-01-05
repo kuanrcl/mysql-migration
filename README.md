@@ -37,7 +37,7 @@ Estimated Workshop Time: 90 minutes.
 
 [Lab 4: Deploy application on Kubernetes](lab4/README.md)
 
-- Use **mysqlsh** to import data to **MySQL Database System**
+- Deploy your PHP application on Oracle Container Engine for Kubernetes to connect with MySQL Database Service
 
 [Lab 5: Accelerate your application](lab5/README.md)
 
