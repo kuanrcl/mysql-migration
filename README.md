@@ -4,13 +4,11 @@ This workshop walks you through the steps to provision **OCI** resources to host
 
 ## Who Should Do This Workshop
 
-You want to **migrate your existing PHP applications** to **OCI and MySQL** and taking advantage of our latest MySQL innovation, **MySQL HeatWave**
+- You want to **migrate your existing PHP applications** to **OCI and MySQL** and taking advantage of our latest MySQL innovation, **MySQL HeatWave**
+- You want to **learn Oracle Cloud Infrastructure**.
+- You want to explore **Oracle Cloud and its Free Tier**.
 
-You want to **learn Oracle Cloud Infrastructure**.
-
-You want to explore **Oracle Cloud and its Free Tier**.
-
-Estimated Workshop Time: 90 minutes.
+Estimated Workshop Time: 90 minutes
 
 ## Content
 
