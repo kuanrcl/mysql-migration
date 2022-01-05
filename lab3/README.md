@@ -76,7 +76,9 @@ util.loadDump("/home/opc/airport-db", {dryRun: false, threads: 8, resetProgress:
 ```
 ![Load Data](images/load-data.png)
 
-It will take less than 30 minutes to complete the data loading on our provisioned compute instance. 
+![Load Done](images/load-done.png)
+
+It will take about 35 minutes to complete the data loading on our provisioned compute instance. 
 
 12. Execute query on MDS
 
@@ -92,6 +94,7 @@ show databases;
 use airportdb;
 show tables;
 ```
+![check db](images/check-db.png)
 
 Execute the following query to find per-company average age of passengers from Germany, Spain and Greece. This query will take about 12-13s to complete
 
