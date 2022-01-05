@@ -1,16 +1,16 @@
-# Migrate your PHP app to MDS HeatWave and OCI 
+# Migrate your PHP app to MDS HeatWave and Oracle Cloud Infrastructure (OCI) 
 
-This workshop walks you through the steps to use **MySQL Database System**, **Data Integration** and **Data Science** to extract data from a CSV dataset, apply some transformations, load the data into MySQL (with HeatWave Analytics Engine) and run a data science Jupyter Notebook.
+This workshop walks you through the steps to provision **OCI** resources to host your on-premises PHP application, load data into **MySQL Database Service**, accelerate your long running queries with **MySQL HeatWave** engine
 
 ## Who Should Do This Workshop
 
-You want to **build a pipeline** for your data and run analytics with your favourite Python libraries on **Jupyter Notebook**.
+You want to **migrate your existing PHP applications** to **OCI and MySQL** and taking advantage of our latest MySQL innovation, **MySQL HeatWave**
 
 You want to **learn Oracle Cloud Infrastructure**.
 
 You want to explore **Oracle Cloud and its Free Tier**.
 
-Estimated Workshop Time: 120 minutes.
+Estimated Workshop Time: 90 minutes.
 
 ## Content
 
@@ -21,34 +21,28 @@ Estimated Workshop Time: 120 minutes.
 
 [Lab 1: Requirements](lab1/README.md)
 
-- Create Virtual Cloud Network (VCN)
-- Create Bastion Host
-- Create Object Storage and upload files
+- Create compartment
 
-[Lab 2: Create MySQL Database System](lab2/README.md)
+[Lab 2: Provision OCI resources](lab2/README.md)
 
-- Create an instance of MySQL in the cloud
-- Connect and create DB
-- Enable HeatWave
+- Use Resource Manager to create OCI resources
+..- Create Virtual Cloud Network
+..- Create Bastion Host
+..- Create Compute Instances
+..- Create MySQL Database System
 
-[Lab 3: Create Data Integration Instance](lab3/README.md)
+[Lab 3: Upload data to MySQL](lab3/README.md)
 
-- Create Your OCI Data Integration Instance
-- Create the Data Assets
+- Use **mysqlsh** to import data to **MySQL Database System**
 
-[Lab 4: Design and Run your ETL pipeline](lab4/README.md)
+[Lab 4: Accelerate your application](lab4/README.md)
 
-- Create the Data Flow
-- Create the Integration Task
-- Publish the Integration Task
-- Run the Task
+- Enable MySQL HeatWave
+- Accelerate your long running queries
 
-[Lab 5: Transform your Data into Insights](lab5/README.md)
+[Lab 5: Test migrated PHP application](lab5/README.md)
 
-- Create Policies
-- Create a Data Science Project
-- Install libraries
-- Create Jupyter Notebook environment
+- Test the migrated PHP application
 
 [Next Steps](next/README.md)
 
