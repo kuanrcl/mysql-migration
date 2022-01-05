@@ -46,12 +46,15 @@ ls
 ![unzip airportdb](images/unzip-airportdb.png)
 
 6. Next we need to connect to the provisioned MDS instance. Click on the <a href="#menu">&#9776; hamburger menu</a> at the top left corner of the OCI console, and select **Databases**, anc click on **DB System**
-![MDS Menu](images/mds-menu.png)
+![MDS Menu](images/MDS-menu.png)
 
-7. Find out the private ip of the provisioned MDS instance.
-![MDS Private IP](images/mds-ip.png)
+7. Select the provisioned MDS instance, **MDSInstance**
+![MDS Details](images/MDS-Details.png)
 
-8. Connect to MDS instance
+8. Find out the private ip of **MDSInstance**
+![MDS Private IP](images/MDS-IP.png)
+
+10. Connect to MDS instance
 
 ```
 mysqlsh --user=admin --password=**PASSWORD** --host=<mysql_private_ip_address> --port=3306 --js
