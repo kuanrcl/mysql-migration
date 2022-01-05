@@ -14,7 +14,7 @@ Estimated Workshop Time: 90 minutes.
 
 ## Content
 
-[Get Started: Sign Up for your Oracle Cloud Free Tier](lab0/README.md)
+[Lab 0: Sign Up for your Oracle Cloud Free Tier](lab0/README.md)
 
 - Create Your Free Trial Account
 - Sign in to Your Account

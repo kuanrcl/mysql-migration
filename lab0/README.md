@@ -1,4 +1,8 @@
-# Get Started: Sign Up for your Oracle Cloud Free Tier
+# Lab 0: Sign Up for your Oracle Cloud Free Tier
+
+## Introduction
+This lab will show you how to sign up for an OCI trial account for 30 days
+Estimated lab time: 10 minutes
 
 ![Oracle Cloud Free Tier Banner](images/oracle_cloud_free_tier0.png)
 
