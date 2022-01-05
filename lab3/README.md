@@ -17,10 +17,44 @@ Estimated lab time: 10 minutes
 
 ![ccompute-ip](images/compute-ip.png)
 
-3. Connect to the Bastion host using your favorite ssh client with the private key
+3. Connect to the Bastion host using your favorite ssh client with the private key using the **opc** user id
 
 ```
-<copy>ssh opc@ip_address -i id_rsa</copy>
+ssh opc@ip_address -i id_rsa
+```
+![connect compute](images/compute-connect.png)
+
+4. Download the database (airportdb) export required by the PHP application
+
+```
+cd /home/opc
+```
+```
+wget -O airport-db.zip https://bit.ly/3pZ1PiW
+```
+![download-airportdb](images/download-airportdb.png)
+
+5. Unpack the downloaded zip file
+
+```
+unzip airport-db.zip
+```
+```
+cd airport-db
+ls
+```
+![unzip airportdb](images/unzip-airportdb.png)
+
+6. Next we need to connect to the provisioned MDS instance. Click on the <a href="#menu">&#9776; hamburger menu</a> at the top left corner of the OCI console, and select **Databases**, anc click on **DB System**
+![MDS Menu](images/mds-menu.png)
+
+7. Find out the private ip of the provisioned MDS instance.
+![MDS Private IP](images/mds-ip.png)
+
+8. Connect to MDS instance
+
+```
+mysqlsh --user=admin --password=**PASSWORD** --host=<mysql_private_ip_address> --port=3306 --js
 ```
 
 ## It works
