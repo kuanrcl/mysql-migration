@@ -8,7 +8,7 @@ Estimated lab time: 10 minutes
 
 ## Task 1: Create Compartment
 
-1. Log in to **OCI** and click on the <a href="#menu">&#9776; Menu</a> at the top left corner of the OCI console, and type **Compartment** in the search box. Click on the **Compartments**
+1. Log in to **OCI** and click on the <a href="#menu">&#9776; hamburger menu</a> at the top left corner of the OCI console, and type **Compartment** in the search box. Click on the **Compartments**
 
 ![compartment](images/compartment.png)
 
