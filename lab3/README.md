@@ -22,7 +22,7 @@ Estimated lab time: 10 minutes
 ```
 ssh opc@ip_address -i id_rsa
 ```
-![connect compute](images/compute-connect.png)
+![compute login](images/compute-login.png)
 
 4. Download the database (airportdb) export required by the PHP application
 
@@ -74,14 +74,15 @@ If the command completes without any error, we will execute the data loading by 
 ```
 util.loadDump("/home/opc/airport-db", {dryRun: false, threads: 8, resetProgress:true, ignoreVersion:true})
 ```
+![Load Data](images/load-data.png)
 
-It will take less than 30 minutes to complete the data loading
+It will take less than 30 minutes to complete the data loading on our provisioned compute instance. 
 
 ## It works
 
-You just created a compartment!
+You just created uploaded airportdb data into **MDS**
 
 ## Congratulations, you are ready for the next Lab!
 
-[Home](../README.md) | [**Go to Lab 2 >>>>>**](../lab2/README.md)
+[Home](../README.md) | [**Go to Lab 4 >>>>>**](../lab4/README.md)
 
