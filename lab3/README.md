@@ -17,6 +17,12 @@ Estimated lab time: 10 minutes
 
 ![ccompute-ip](images/compute-ip.png)
 
+3. Connect to the Bastion host using your favorite ssh client with the private key
+
+```
+<copy>ssh opc@ip_address -i id_rsa</copy>
+```
+
 ## It works
 
 You just created a compartment!
