@@ -78,6 +78,42 @@ util.loadDump("/home/opc/airport-db", {dryRun: false, threads: 8, resetProgress:
 
 It will take less than 30 minutes to complete the data loading on our provisioned compute instance. 
 
+12. Execute query on MDS
+
+Now that we have imported the airportdb data, lets verify the database
+
+```
+mysqlsh --user=admin --password=**PASSWORD** --host=<mysql_private_ip_address> --port=3306 --sql
+```
+```
+show databases;
+```
+```
+use airportdb;
+show tables;
+```
+
+Execute the following query to find per-company average age of passengers from Germany, Spain and Greece. This query will take about 12-13s to complete
+
+```
+SELECT
+airline.airlinename,
+AVG(datediff(departure,birthdate)/365.25) as avg_age,
+count(*) as nb_people
+FROM
+booking, flight, airline, passengerdetails
+WHERE
+booking.flight_id=flight.flight_id AND
+airline.airline_id=flight.airline_id AND
+booking.passenger_id=passengerdetails.passenger_id AND
+country IN ("GERMANY", "SPAIN", "GREECE")
+GROUP BY
+airline.airlinename
+ORDER BY
+airline.airlinename, avg_age
+LIMIT 10;
+```
+
 ## It works
 
 You just created uploaded airportdb data into **MDS**
