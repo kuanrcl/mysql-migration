@@ -4,7 +4,8 @@ This workshop walks you through the steps to provision **OCI** resources to host
 
 ## Who Should Do This Workshop
 
-- You want to **migrate your existing PHP applications** to **OCI and MySQL** and taking advantage of our latest MySQL innovation, **MySQL HeatWave**
+- You want to **migrate your existing PHP applications** to **OCI and MySQL** 
+- You want to know more about our latest MySQL innovation, **MySQL HeatWave**
 - You want to **learn Oracle Cloud Infrastructure**.
 - You want to explore **Oracle Cloud and its Free Tier**.
 
