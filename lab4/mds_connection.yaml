@@ -1,0 +1,25 @@
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+    name: cloudnative-webapp-airportdb-mds
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: mds-host-configmaps
+  namespace: cloudnative-webapp-airportdb-mds
+data:
+  mds-host: "10.0.30.228"
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: mds-secret
+  namespace: cloudnative-webapp-airportdb-mds
+type: Opaque
+stringData:
+  mds-database: airportdb
+  mds-user: admin
+  mds-password: Oracle#123
+---
