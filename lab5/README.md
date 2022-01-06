@@ -49,7 +49,7 @@ USE performance_schema;
 ```
 SELECT NAME, LOAD_STATUS FROM rpd_tables,rpd_table_id WHERE rpd_tables.ID = rpd_table_id.ID;
 ```
-![HeatWave Load Check](imges/heatwave-load-check.png)
+![HeatWave Load Check](images/heatwave-load-check.png)
 
 3. By default, MDS will offload SELECT queries to HeatWave. There is a magic switch, **use_secondary_engine** that is enabled.
 
