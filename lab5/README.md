@@ -8,7 +8,7 @@ In this lab we will enable the HeatWave cluster and accelerate your long running
 
 Estimated lab time: 15 minutes
 
-Task 1: Add HeatWave Cluster to MySQL Database Service 
+### Task 1: Add HeatWave Cluster to MySQL Database Service 
 1. Navigate to MDS console by clicking on the <a href="#menu">&#9776; hamburger menu</a>, select **Databases**, and click on **DB System**
 ![MDS Menu](images/MDS-menu.png)
 
