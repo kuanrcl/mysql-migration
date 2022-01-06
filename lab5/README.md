@@ -9,11 +9,26 @@ In this lab we will enable the HeatWave cluster and accelerate your long running
 Estimated lab time: 15 minutes
 
 Task 1: Add HeatWave Cluster to MySQL Database Service 
-1. Navigate to MDS console by clicking on the 
+1. Navigate to MDS console by clicking on the <a href="#menu">&#9776; hamburger menu</a>, select **Databases**, and click on **DB System**
+![MDS Menu](images/mds-menu.png)
+
+2. Select the **MDSInstance**
+![MDS Details](images/mds-details.png)
+
+3. From the menu on the left bottom side select HeatWave, and click on the button Add HeatWave Cluster located on the right.
+![Add HeatWave](images/heatwave-add.png)
+
+4. Check that Shape looks as per picture below and that Node Count is set to 2, and then click the button Add HeatWave Cluster.
+![Review HeatWave](images/heatwave-review.png)
+
+5. You will be brought back to the main page where you can check for the creation status. After some seconds you should see the nodes in Creating status.
+![Create HeatWave](images/heatwave-create.png)
+
+6. After completion, the node status will switch to Active status. The process will take some time to be completed. You can go to the next Task in the meantime.
 
 ## It works
 
-You just turn on the turbo engine on MDS!
+You have just turned on the turbo engine on MySQL and accelerated your long running queries with HeatWave!
 
 ## Congratulations, you are ready for the next lab
 
