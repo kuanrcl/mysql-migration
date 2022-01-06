@@ -14,32 +14,32 @@ Estimated lab time: 30 minutes
 
 ### Task 1: Create Stack in Resource Manager
 
-Open this [Terraform scripts](https://github.com/rayeswong/terraform-oke-mds) in a browser, and click **"Deploy to Oracle Cloud"** to create a new stack in Resource Manager.
+1. Open this [Terraform scripts](https://github.com/rayeswong/terraform-oke-mds) in a browser, and click **"Deploy to Oracle Cloud"** to create a new stack in Resource Manager.
 
 ![Deploy to Oracle Cloud](https://oci-resourcemanager-plugin.plugins.oci.oraclecloud.com/latest/deploy-to-oracle-cloud.svg)
 
-Sign in to **Oracle Cloud** if you haven't yet.
+2. Sign in to **Oracle Cloud** if you haven't yet.
 
 In the page of 'Create Stack', check to accept terms, give a name to your stack (e.g. "MySQL on OKE Lab"), select the compartment (e.g. PHP-Compartment) to provision OCI resources, and click **Next**.
 
 ![Create Stack 1](images/resource_manager_create_stack_1.png)
 
-Review the values pre-populated for your OCI Resources, update the password for "MDS Admin User's Password" (default password: Oracle#123), and click **Next**.
+3. Review the values pre-populated for your OCI Resources, update the password for "MDS Admin User's Password" (default password: Oracle#123), and click **Next**.
 
 ![Create Stack 2](images/resource_manager_create_stack_2.png)
 
-Check **Run Apply** and click **Create** to create the stack and apply the Terraform scripts.
+4. Check **Run Apply** and click **Create** to create the stack and apply the Terraform scripts.
 ![Create Stack 3](images/resource_manager_create_stack_3.png)
 
-A job will be created to apply your Terraform scripts to provision OCI resources.
+5. A job will be created to apply your Terraform scripts to provision OCI resources.
 ![Create Stack 4](images/resource_manager_create_stack_4.png)
 
-It takes about **20 minutes** to complete this job. At the meanwhile, you can click on your Terraform job to view logs of progress of your job.
+6. It takes about **20 minutes** to complete this job. At the meanwhile, you can click on your Terraform job to view logs of progress of your job.
 ![Create Stack 5](images/resource_manager_create_stack_5.png)
 
 ![Create Stack 6](images/resource_manager_create_stack_6.png)
 
-Once your job has been executed successfully, you can find the public IP address of your bastion host VM, and the private IP address of the MySQL Database from the outputs.
+7. Once your job has been executed successfully, you can find the public IP address of your bastion host VM, and the private IP address of the MySQL Database from the outputs.
 ![Create Stack 7](images/resource_manager_create_stack_7.png)
 
 ## It works
