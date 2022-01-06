@@ -50,7 +50,7 @@ kubectl -n cloudnative-webapp-airportdb-mds get service
 
 2. Submit a SQL statement to verify that PHP application connects well with MDS.
 ```
-select count(*) from bookings;) 
+select count(*) from bookings;
 ```
  
 3. You should get the query result and the execution time.
