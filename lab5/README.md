@@ -10,10 +10,10 @@ Estimated lab time: 15 minutes
 
 Task 1: Add HeatWave Cluster to MySQL Database Service 
 1. Navigate to MDS console by clicking on the <a href="#menu">&#9776; hamburger menu</a>, select **Databases**, and click on **DB System**
-![MDS Menu](images/mds-menu.png)
+![MDS Menu](images/MDS-menu.png)
 
 2. Select the **MDSInstance**
-![MDS Details](images/mds-details.png)
+![MDS Details](images/MDS-details.png)
 
 3. From the menu on the left bottom side select HeatWave, and click on the button Add HeatWave Cluster located on the right.
 ![Add HeatWave](images/heatwave-add.png)
