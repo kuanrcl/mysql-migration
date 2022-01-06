@@ -46,6 +46,8 @@ kubectl -n cloudnative-webapp-airportdb-mds get service
 ## Task 3: Access the Application 
 
 1. Open a browser and access your PHP application using the external IP address. (e.g. http://xxx.xxx.xxx.xxx:5000/index.php). You will get a page to submit SQL statement against MDS.
+
+
 ![Access App](images/access_app.png)
 
 2. Submit a SQL statement to verify that PHP application connects well with MDS.
