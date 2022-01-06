@@ -64,4 +64,4 @@ You just deployed and tested applications on Kubernetes
 
 ## Congratulations, you are ready for the next Lab!
 
-[Home](../README.md) | [**Go to Lab 4 >>>>>**](../lab4/README.md)
+[Home](../README.md) | [**Go to Lab 5 >>>>>**](../lab5/README.md)
