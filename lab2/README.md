@@ -29,17 +29,23 @@ In the page of 'Create Stack', check to accept terms, give a name to your stack 
 ![Create Stack 2](images/resource_manager_create_stack_2.png)
 
 4. Check **Run Apply** and click **Create** to create the stack and apply the Terraform scripts.
+
+
 ![Create Stack 3](images/resource_manager_create_stack_3.png)
 
 5. A job will be created to apply your Terraform scripts to provision OCI resources.
+
+
 ![Create Stack 4](images/resource_manager_create_stack_4.png)
 
 6. It takes about **20 minutes** to complete this job. At the meanwhile, you can click on your Terraform job to view logs of progress of your job.
+
 ![Create Stack 5](images/resource_manager_create_stack_5.png)
 
 ![Create Stack 6](images/resource_manager_create_stack_6.png)
 
 7. Once your job has been executed successfully, you can find the public IP address of your bastion host VM, and the private IP address of the MySQL Database from the outputs.
+
 ![Create Stack 7](images/resource_manager_create_stack_7.png)
 
 ## It works
