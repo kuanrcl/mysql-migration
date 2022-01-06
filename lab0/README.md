@@ -9,7 +9,7 @@ Estimated lab time: 10 minutes
 
 During this short Lab, we will **Create**, **Sign In** and **Walk Through** the steps of setting up an **Oracle Cloud Free Tier** account.
 
-## Create Your Free Trial Account
+### Task 1: Create Your Free Trial Account
 
 What's included with **Oracle Cloud Free Tier**?
 
@@ -45,7 +45,7 @@ You will be prompted to enter the **Code** sent to your cell phone.
 
 ![Sign Up Page Mobile Number](images/oracle_cloud_free_tier3.png)
 
-## Sign in to Your Account
+### Task 2: Sign in to Your Account
 
 At the end of this process, you will receive an email titled "**Get Started Now with Oracle Cloud**". This will contain all the information you need to sign in to your cloud account and include a link to the login page for your region.
 On that email, you will receive a **Cloud Account** and **Username**.
