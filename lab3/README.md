@@ -94,7 +94,7 @@ util.loadDump("/home/opc/airport-db", {dryRun: false, threads: 8, resetProgress:
 
 ![Load Done](images/load-done.png)
 
-It will take about 35 minutes to complete the data loading on our provisioned compute instance. 
+It will take about 5-10 minutes to complete the data loading on our provisioned compute instance. 
 
 ## Task 3: Verify the database import
 1. Execute query on MDS
