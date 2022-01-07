@@ -34,7 +34,12 @@ On the Sign Up page, select your **Country/Territory**, enter your **email addre
 On the "**Enter Account Details**" page, you will be asked for **Account Type**; please select **Company Use** or **Personal Use** considering the purpose of this cloud account.
 You will also be asked for the **Cloud Account Name** (also known as **Tenancy Name**). This will uniquely identify your cloud account and will be visible in your **URL** later, so please choose wisely.
 
-Finally, you will also be asked for the "**Home Region**". This is the location of the physical data centre. You should select a data centre that is geographically close to you and supports the required services.
+Finally, you will also be asked for the "**Home Region**". This is the location of the physical data centre. For the purpose of this workshop, please select any one of the following regions: (or any region that is closer to your geographical location)
+
+- Korea
+- Tokyo
+- Osaka
+- Singapore
 
 [You can review which services are available in each region using this page.](https://www.oracle.com/uk/cloud/data-regions.html#emea)
 
