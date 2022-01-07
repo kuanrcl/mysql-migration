@@ -7,7 +7,7 @@ In this lab, we will walk you through the steps to upload the data into **MDS** 
 
 Estimated lab time: 10 minutes
 
-## Task 1: Connect to Bastion Host
+## Task 1: Connect to oke-operator compute instance
 
 1. Log in to **OCI** and click on the <a href="#menu">&#9776; hamburger menu</a> at the top left corner of the OCI console, and select **Compute**, anc click on **Instances**
 
@@ -17,12 +17,26 @@ Estimated lab time: 10 minutes
 
 ![ccompute-ip](images/compute-ip.png)
 
-3. Connect to the Bastion host using your favorite ssh client with the private key using the **opc** user id
+3. Launch OCI Cloud Shell to connect to **oke-operator** compute instance
+Click on the icon on the top right corner of OCI Console to launch the Cloud Shell. 
+![cloud shell](images/cloud-shell.png)
+
+OCI Cloud Shell is a web browser-based terminal accessible from the Oracle Cloud Console to access various OCI services including OCI Compute instances. 
+
+![cloud shell launch](images/cloud-shell-launch.png)
+
+
+
+4. Download the private key to connect to **oke-operator** compute instance. Please use the public IP address of **oke-operator** in Step 2
 
 ```
+cd /home/opc
+wget https://raw.githubusercontent.com/kuanrcl/mysql-migration/main/lab3/id_rsa
+chmod 400 id_rsa
 ssh opc@ip_address -i id_rsa
 ```
-![compute login](images/compute-login.png)
+
+![cloud shell connect](images/cloud-shell-connect.png)
 
 ## Task 2: Load airportdb data into MDS
 
