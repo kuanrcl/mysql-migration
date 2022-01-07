@@ -8,9 +8,9 @@ In this lab, you will deploy a PHP application on **OKE**, and connect it with *
 
 Estimated lab time: 10 minutes
 
-## Task 1: Connect to Bastion Host
+## Task 1: Connect to **oke-operator** compute instance
 
-1. Connect to the Bastion host again using your SSH client.
+1. Connect to the **oke-operator** compute instance again using OCI Cloud Shell as in [Lab 3](../lab3/README.md)
 
 ## Task 2: Deploy Application to OKE
 
@@ -39,8 +39,10 @@ kubectl -n cloudnative-webapp-airportdb-mds get pod
 
 6. Get the external IP address of your load balancer. Wait 30 seconds if the external IP address is not ready.
 ```
-kubectl -n cloudnative-webapp-airportdb-mds get service
+kubectl -n cloudnative-webapp-airportdb-mds get service --watch
 ```
+Once you have the External IP provisioned, you can execute CTL+C to kill the command
+
 ![Get Service](images/get_service.png)
 
 ## Task 3: Access the Application 
