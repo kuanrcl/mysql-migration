@@ -4,23 +4,21 @@
 
 Resource Manager is an Oracle Cloud Infrastructure service that allows you to automate the process of provisioning your Oracle Cloud Infrastructure resources. Using Terraform, Resource Manager helps you install, configure, and manage resources through the "infrastructure-as-code" model.
 
-You will provision the following OCI resources using Resource Manager in this lab:
+In this lab, you will provision the following OCI resources using Resource Manager:
   - Virtual Cloud Network with related network resources and policies
   - Oracle Container Engine for Kubernetes and a node pool with 2 worker nodes
   - MySQL Database System
-  - Bastion Host Virtual Machine with kubectl and MySQL tools installed
+  - Operator Virtual Machine with kubectl and MySQL client tools installed
 
 Estimated lab time: 30 minutes
 
 ### Task 1: Create Stack in Resource Manager
 
-1. Open this [Terraform scripts](https://github.com/rayeswong/terraform-oke-mds) in a browser, and click **"Deploy to Oracle Cloud"** to create a new stack in Resource Manager.
+1. Open this [Terraform scripts](https://github.com/rayeswong/terraform-oke-mds) in a browser, and click the image **"Deploy to Oracle Cloud"** to create a new stack in Resource Manager.
 
 ![Deploy to Oracle Cloud](https://oci-resourcemanager-plugin.plugins.oci.oraclecloud.com/latest/deploy-to-oracle-cloud.svg)
 
-2. Sign in to **Oracle Cloud** if you haven't yet.
-
-In the page of 'Create Stack', check to accept terms, give a name to your stack (e.g. "MySQL on OKE Lab"), select the compartment (e.g. PHP-Compartment) to provision OCI resources, and click **Next**.
+2. Sign in to **Oracle Cloud** if you haven't yet. In the page of 'Create Stack', check to accept terms, give a name to your stack (e.g. "MySQL on OKE Lab"), select the compartment (e.g. PHP-Compartment) to provision OCI resources, and click **Next**.
 
 ![Create Stack 1](images/resource_manager_create_stack_1.png)
 
@@ -44,7 +42,7 @@ In the page of 'Create Stack', check to accept terms, give a name to your stack 
 
 ![Create Stack 6](images/resource_manager_create_stack_6.png)
 
-7. Once your job has been executed successfully, you can find the public IP address of your bastion host VM, and the private IP address of the MySQL Database from the outputs.
+7. Once your job has been executed successfully, you can find the public IP address of your operator VM, and the private IP address of the MySQL Database from the outputs. **PLEASE** note down these two IP addresses that will be used in the subsequent labs.
 
 ![Create Stack 7](images/resource_manager_create_stack_7.png)
 
