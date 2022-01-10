@@ -43,10 +43,6 @@ Estimated Workshop Time: 90 minutes
 - Enable MySQL HeatWave
 - Accelerate your long running queries
 
-[Lab 6: Test migrated PHP application](lab6/README.md)
-
-- Test the migrated PHP application
-
 [Next Steps](next/README.md)
 
 - Want to Learn More?
