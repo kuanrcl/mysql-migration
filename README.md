@@ -1,6 +1,6 @@
-# Migrate your PHP app to MDS HeatWave and Oracle Cloud Infrastructure (OCI) 
+# Migrate your PHP app to MDS HeatWave and Oracle Container Engine for Kubernetes 
 
-This workshop walks you through the steps to provision **OCI** resources to host your on-premises PHP application, load data into **MySQL Database Service (MDS)**, accelerate your long running queries with **MySQL HeatWave** engine
+This workshop walks you through the steps to provision **Oracle Cloud Infrascture (OCI)** resources to host your on-premises PHP application, load data into **MySQL Database Service (MDS)**, accelerate your long running queries with **MySQL HeatWave** engine
 
 ## Who Should Do This Workshop
 
@@ -25,10 +25,10 @@ Estimated Workshop Time: 90 minutes
 [Lab 2: Provision OCI resources](lab2/README.md)
 
 - Use Resource Manager to create OCI resources
-  - Create Virtual Cloud Network
-  - Create Bastion Host
-  - Create Kubernetes Cluster and Worker Nodes
-  - Create MySQL Database System
+  - Virtual Cloud Network
+  - Operator Virtual Machine
+  - Oracle Container Engine for Kubernetes
+  - MySQL Database System
 
 [Lab 3: Upload data to MySQL Database System (MDS)](lab3/README.md)
 
@@ -36,7 +36,7 @@ Estimated Workshop Time: 90 minutes
 
 [Lab 4: Deploy application on Kubernetes](lab4/README.md)
 
-- Deploy your PHP application on Oracle Container Engine for Kubernetes to connect with MySQL Database Service
+- Deploy your PHP application onto Oracle Container Engine for Kubernetes to connect with MySQL Database Service
 
 [Lab 5: Accelerate your application](lab5/README.md)
 
