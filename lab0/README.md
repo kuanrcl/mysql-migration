@@ -36,6 +36,10 @@ You will also be asked for the **Cloud Account Name** (also known as **Tenancy N
 
 Finally, you will also be asked for the "**Home Region**". This is the location of the physical data centre. For the purpose of this workshop, please select any one of the following regions: (or any region that is closer to your geographical location)
 
+- Ashburn (US East)
+- Phoenix (US West)
+- Frankfurt
+- London 
 - Korea
 - Tokyo
 - Osaka
