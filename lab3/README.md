@@ -13,7 +13,7 @@ Estimated lab time: 10 minutes
 
 ![compute-menu](images/compute-menu.png)
 
-2. Find out the **Public IP** of the compute instance **oke-operator**, we will need this to connect to the compute instance to load the data into **MDS**
+2. In the Compute>Instance page, select the right compartment under “Compartment” > “PHP-Compartment” at the right hand side. The list of instances will be showed. Then, find out the Public IP of the compute instance oke-operator, we will need this to connect to the compute instance to load the data into MySQL Database Service
 
 ![ccompute-ip](images/compute-ip.png)
 
@@ -25,9 +25,7 @@ OCI Cloud Shell is a web browser-based terminal accessible from the Oracle Cloud
 
 ![cloud shell launch](images/cloud-shell-launch.png)
 
-
-
-4. Download the private key to connect to **oke-operator** compute instance. Please use the public IP address of **oke-operator** in Step 2
+4. Gollow the steps below to download the private key for connecting to oke-operator compute instance. Please use the public IP address of oke-operator in Step 2
 
 ```
 cd /home/opc
@@ -67,10 +65,10 @@ ls
 4. Select the provisioned MDS instance, **MDSInstance**
 ![MDS Details](images/MDS-details.png)
 
-5. Find out the private ip of **MDSInstance**
+5. If you did not note down the private ip of **MDSInstance**
 ![MDS Private IP](images/MDS-IP.png)
 
-6. Connect to MDS instance
+6. Connect to MDS instance. Update password (default: Oracle#123) and host (same as MDS host private IP address)
 
 ```
 cd /home/opc/airport-db
