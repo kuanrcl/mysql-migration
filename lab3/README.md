@@ -13,7 +13,7 @@ Estimated lab time: 10 minutes
 
 ![compute-menu](images/compute-menu.png)
 
-2. In the Compute>Instance page, select the right compartment under “Compartment” > “PHP-Compartment” at the right hand side. The list of instances will be showed. Then, find out the Public IP of the compute instance oke-operator, we will need this to connect to the compute instance to load the data into MySQL Database Service
+2. In the Compute>Instance page, select the right compartment under “Compartment” > “PHP-Compartment” at the right hand side. The list of instances will be showed. Then, find out the **Public IP** of the compute instance **oke-operator**, we will need this to connect to the compute instance to load the data into **MySQL Database Service**
 
 ![ccompute-ip](images/compute-ip.png)
 
