@@ -34,7 +34,9 @@ Estimated lab time: 15 minutes
 wget https://raw.githubusercontent.com/kuanrcl/mysql-migration/main/lab4/mds_connection.yaml
 ```
 
-2. Update **"mds-host"** with the private IP address of your MDS instance, and **"mds-password"** with the password you gave when provisioning MDS in Resource Manager.
+2. Using vi or any editor to update the two parameters in **mds_connection.yaml**. Update **“mds-host”** with the private IP address of your MDS instance, and **“mds-password”** with the password you gave when provisioning MDS in Resource Manager.
+
+![Update MDS Connection](images/mds_connection.png)
 
 3. Create Kubernetes configmap and secret to store MDS connection metadata.
 ```
@@ -77,7 +79,7 @@ Once you have the External IP provisioned, you can execute CTL+C to kill the com
 
 2. Submit a SQL statement to verify that PHP application connects well with MDS.
 ```
-select count(*) from bookings;
+select count(*) from booking;
 ```
  
 3. You should get the query result and the execution time.
