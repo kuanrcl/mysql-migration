@@ -73,7 +73,7 @@ WHERE
 booking.flight_id=flight.flight_id AND
 airline.airline_id=flight.airline_id AND
 booking.passenger_id=passengerdetails.passenger_id AND
-country IN ("GERMANY", "SPAIN", "GREECE")
+country IN ('GERMANY', 'SPAIN', 'GREECE')
 GROUP BY
 airline.airlinename
 ORDER BY
@@ -104,9 +104,30 @@ ORDER BY airline.airlinename, avg_age
 LIMIT 10;
 ```
 The query will take around 12s to complete just like what we saw in Lab 3 (../lab3/README.MD)
+
 ![php-mds](images/php-mds.png)
 
 2. Next, we will execute the query against the HeatWave cluster without the optimizer hint (/*+ SET_VAR(use_secondary_engine=OFF) */))
+
+```
+SELECT
+airline.airlinename,
+AVG(datediff(departure,birthdate)/365.25) as avg_age,
+count(*) as nb_people
+FROM
+booking, flight, airline, passengerdetails
+WHERE
+booking.flight_id=flight.flight_id AND
+airline.airline_id=flight.airline_id AND
+booking.passenger_id=passengerdetails.passenger_id AND
+country IN ('GERMANY', 'SPAIN', 'GREECE')
+GROUP BY
+airline.airlinename
+ORDER BY
+airline.airlinename, avg_age
+LIMIT 10;
+```
+
 ![php-heatwave-query](images/php-heatwave-query.png)
 
 The query will complete in less than 1s without any modification to the original SQL statement! This is 10x improvement on HeatWave!
