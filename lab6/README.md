@@ -35,7 +35,7 @@ airline.airlinename, avg_age
 LIMIT 10;
 ```
 
-Record the response time for comparison.
+This query will take about 13s to execute. Record the response time for comparison.
 Re-execute the query against MySQL HeatWave
 
 ```
@@ -59,7 +59,7 @@ ORDER BY
 airline.airlinename, avg_age
 LIMIT 10;
 ```
-Record the response time for comparison.
+This query will now take less than 1s to execute, record the response time for comparison.
 
 ### Task 2: Execute Query 2
 
@@ -89,7 +89,7 @@ nb_tickets desc, airline.airlinename
 LIMIT 10;
 ```
 
-Record the response time for comparison.
+This query will take about 24s to execute. Record the response time for comparison.
 Re-execute the query against MySQL HeatWave
 
 ```
@@ -113,7 +113,7 @@ ORDER BY
 nb_tickets desc, airline.airlinename
 LIMIT 10;
 ```
-Record the response time for comparison.
+This query will now take less than 1s to execute, record the response time for comparison.
 
 ### Task 3: Execute Query 3
 
@@ -141,7 +141,8 @@ booking.passenger_id = passenger.passenger_id
 GROUP BY firstname , lastname;
 ```
 
-Record the response time for comparison.
+This query will take about 40s to exeute, record the response time for comparison.
+
 Re-execute the query against MySQL HeatWave
 
 ```
@@ -163,7 +164,7 @@ booking.passenger_id = passenger.passenger_id
     AND booking.price > 400.00
 GROUP BY firstname , lastname;
 ```
-Record the response time for comparison.
+This query will now take less than 4s to exeute, record the response time for comparison.
 
 ## It works
 

@@ -124,7 +124,7 @@ WHERE
 booking.flight_id=flight.flight_id AND
 airline.airline_id=flight.airline_id AND
 booking.passenger_id=passengerdetails.passenger_id AND
-country IN ("GERMANY", "SPAIN", "GREECE")
+country IN ('GERMANY', 'SPAIN', 'GREECE')
 GROUP BY
 airline.airlinename
 ORDER BY
