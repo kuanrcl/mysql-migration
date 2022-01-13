@@ -94,16 +94,20 @@ Now that we have enabled HeatWave cluster, lets test our migrated PHP applicatio
 SELECT /*+ SET_VAR(use_secondary_engine = OFF) */  airline.airlinename, 
 AVG(datediff(departure,birthdate)/365.25) as avg_age, 
 count(*) as nb_people 
-FROM booking, flight, airline, passengerdetails 
-WHERE booking.flight_id=flight.flight_id AND 
+FROM 
+booking, flight, airline, passengerdetails 
+WHERE 
+booking.flight_id=flight.flight_id AND 
 airline.airline_id=flight.airline_id AND 
 booking.passenger_id=passengerdetails.passenger_id AND 
 country IN ('GERMANY', 'SPAIN', 'GREECE') 
-GROUP BY airline.airlinename 
-ORDER BY airline.airlinename, avg_age 
+GROUP BY 
+airline.airlinename 
+ORDER BY 
+airline.airlinename, avg_age 
 LIMIT 10;
 ```
-The query will take around 12s to complete just like what we saw in Lab 3 (../lab3/README.MD)
+The query will take around 13s to complete just like what we saw in [Lab 3](../lab3/README.md)
 
 ![php-mds](images/php-mds.png)
 
@@ -121,9 +125,9 @@ booking.flight_id=flight.flight_id AND
 airline.airline_id=flight.airline_id AND
 booking.passenger_id=passengerdetails.passenger_id AND
 country IN ('GERMANY', 'SPAIN', 'GREECE')
-GROUP BY
+GROUP BY 
 airline.airlinename
-ORDER BY
+ORDER BY 
 airline.airlinename, avg_age
 LIMIT 10;
 ```
