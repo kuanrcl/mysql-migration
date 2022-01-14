@@ -24,7 +24,10 @@ Estimated lab time: 15 minutes
 5. You will be brought back to the main page where you can check for the creation status. After some seconds you should see the nodes in Creating status.
 ![Create HeatWave](images/heatwave-create.png)
 
-6. After completion, the node status will switch to Active status. The process will take some time to be completed. You can go to the next Task in the meantime.
+6. You can check the HeatWave creation progress by selecting the **Work Request**
+![HeatWave Progress](images/heatware-progress.png)
+
+7. After completion, the node status will switch to Active status. The process will take some time to be completed. You can go to the next Task in the meantime.
 
 ### Task 2: Accelerate long running queries on HeatWave
 
