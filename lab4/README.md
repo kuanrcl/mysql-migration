@@ -34,35 +34,63 @@ Estimated lab time: 15 minutes
 wget https://raw.githubusercontent.com/kuanrcl/mysql-migration/main/lab4/mds_connection.yaml
 ```
 
-2. Using vi or any editor to update the two parameters in **mds_connection.yaml**. Update **“mds-host”** with the private IP address of your MDS instance, and **“mds-password”** with the password you gave when provisioning MDS in Resource Manager.
+2. Update parameter **“mds-host”** in mds_connection.yaml. Replace "\<IP ADDRESS>" below with the IP address of your MDS instance, and execute the script.
+   
+```
+sed -i 's/mds-host: "<TO BE SET>"/mds-host: "<IP ADDRESS>"/g' mds_connection.yaml
+```
 
+For example, if the IP address of your MDS instance is "10.0.30.41", your script should be:
+```
+sed -i 's/mds-host: "<TO BE SET>"/mds-host: "10.0.30.41"/g' mds_connection.yaml
+```
+
+
+3. (Skip this step if you use default password  for MDS) Update parameter **“mds-password”** in mds_connection.yaml. Replace "\<MDS Password>" with the password you gave when provisioning MDS in Resource Manager, and execute the script.
+
+```
+sed -i 's/Oracle#123/<MDS Password>/g' mds_connection.yaml
+```
+
+For example, if your new password is "MySQL#12345", your script should be:
+
+```
+sed -i 's/Oracle#123/MySQL#12345/g' mds_connection.yaml
+```
+
+4. Print your mds_connection.yaml file and verify it has the correct IP address and password for MDS.
+
+```
+cat mds_connection.yaml
+```
 ![Update MDS Connection](images/mds_connection.png)
 
-3. Create Kubernetes configmap and secret to store MDS connection metadata.
+
+5. Create Kubernetes configmap and secret to store MDS connection metadata.
 ```
 kubectl apply -f  mds_connection.yaml
 ```
 ![Apply MDS Connection](images/apply_mds_connection.png)
 
-4. Download yaml deployment file [deploy_webapp.yaml](deploy_webapp.yaml).
+6. Download yaml deployment file [deploy_webapp.yaml](deploy_webapp.yaml).
 
 ```
 wget https://raw.githubusercontent.com/kuanrcl/mysql-migration/main/lab4/deploy_webapp.yaml
 ```
 
-5. Deploy the PHP application into OKE.
+7. Deploy the PHP application into OKE.
 ```
 kubectl apply -f deploy_webapp.yaml
 ```
 ![Apply WebApp](images/apply_webapp.png)
 
-5. Check the status of pods and wait until all pods are up and running
+8. Check the status of pods and wait until all pods are up and running
 ```
 kubectl -n cloudnative-webapp-airportdb-mds get pod
 ```
 ![Get Pod](images/get_pod.png)
 
-6. Get the external IP address of your load balancer. Wait 30 seconds if the external IP address is not ready.
+9. Get the external IP address of your load balancer. Wait 30 seconds if the external IP address is not ready.
 ```
 kubectl -n cloudnative-webapp-airportdb-mds get service --watch
 ```
@@ -79,10 +107,25 @@ Once you have the External IP provisioned, you can execute CTL+C to kill the com
 
 2. Submit a SQL statement to verify that PHP application connects well with MDS.
 ```
-select count(*) from booking;
+SELECT
+airline.airlinename,
+AVG(datediff(departure,birthdate)/365.25) as avg_age,
+count(*) as nb_people
+FROM
+booking, flight, airline, passengerdetails
+WHERE
+booking.flight_id=flight.flight_id AND
+airline.airline_id=flight.airline_id AND
+booking.passenger_id=passengerdetails.passenger_id AND
+country IN ('GERMANY', 'SPAIN', 'GREECE')
+GROUP BY 
+airline.airlinename
+ORDER BY 
+airline.airlinename, avg_age
+LIMIT 10;
 ```
  
-3. You should get the query result and the execution time.
+3. After a while, you should get the query result together with the execution time. Note down the execution time, you will see performance improvement in next lab after HeatWave is enabled.
 
 ![Query Result](images/query_result.png)
 
