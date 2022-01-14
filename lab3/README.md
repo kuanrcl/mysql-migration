@@ -25,10 +25,9 @@ OCI Cloud Shell is a web browser-based terminal accessible from the Oracle Cloud
 
 ![cloud shell launch](images/cloud-shell-launch.png)
 
-4. Gollow the steps below to download the private key for connecting to oke-operator compute instance. Please use the public IP address of oke-operator in Step 2
+4. Follow the steps below to download the private key for connecting to oke-operator compute instance. Please use the public IP address of oke-operator in Step 2
 
 ```
-cd /home/opc
 wget https://raw.githubusercontent.com/kuanrcl/mysql-migration/main/lab3/id_rsa
 chmod 400 id_rsa
 ssh opc@ip_address -i id_rsa
