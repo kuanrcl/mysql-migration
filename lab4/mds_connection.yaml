@@ -10,7 +10,7 @@ metadata:
   name: mds-host-configmaps
   namespace: cloudnative-webapp-airportdb-mds
 data:
-  mds-host: "10.0.30.228"
+  mds-host: "<TO BE SET>"
 ---
 apiVersion: v1
 kind: Secret
