@@ -72,6 +72,10 @@ ls
 ```
 cd /home/opc/airport-db
 sudo yum install mysql-shell
+```
+![mysql shell isntall](images/mysqlsh-install.png)
+
+```
 mysqlsh --user=admin --password=**PASSWORD** --host=<mysql_private_ip_address> --port=3306 --js
 ```
 
