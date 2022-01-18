@@ -71,7 +71,7 @@ ls
 
 ```
 cd /home/opc/airport-db
-sudo yum install mysql-shell
+sudo yum install -y mysql-shell
 ```
 ![mysql shell isntall](images/mysqlsh-install.png)
 
