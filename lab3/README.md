@@ -67,10 +67,11 @@ ls
 5. If you did not note down the private ip of **MDSInstance**
 ![MDS Private IP](images/MDS-IP.png)
 
-6. Connect to MDS instance. Update password (default: Oracle#123) and host (same as MDS host private IP address)
+6. Connect to MDS instance. Update password (default: Oracle#123) and host (same as MDS host private IP address). We will first install the mysql shell utility and then start the data import
 
 ```
 cd /home/opc/airport-db
+sudo yum install mysql-shell
 mysqlsh --user=admin --password=**PASSWORD** --host=<mysql_private_ip_address> --port=3306 --js
 ```
 
