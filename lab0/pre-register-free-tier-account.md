@@ -98,6 +98,14 @@ _Please note that while your tenancy is initially created, you will only see a d
 
     ![](images/oci-console-home-page.png " ")
 
+## It works
+
+You just created a compartment!
+
+## Congratulations, you are ready for the next Lab!
+
+[Home](../README.md) | [**Go to Lab 1 >>>>>**](../lab1/README.md)
+
 ## **Acknowledgements**
 
 - **Created By/Date** - Tom McGinn, Database Innovations Architect, Database Product Management, March 2020
