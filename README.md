@@ -43,6 +43,11 @@ Estimated Workshop Time: 90 minutes
 - Enable MySQL HeatWave
 - Accelerate your long running queries
 
+[Lab 6 (OPTIONAL): Accelerate Long Running SQL](lab6/README.md)
+
+- Execute more complex and long running SQL queries
+- Compare performance and response time between MDS and HeatWave
+
 [Next Steps](next/README.md)
 
 - Want to Learn More?
