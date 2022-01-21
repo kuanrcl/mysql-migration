@@ -100,7 +100,7 @@ _Please note that while your tenancy is initially created, you will only see a d
 
 ## It works
 
-You just enabled and logged into your OCI account!
+You have just enabled and logged into your OCI account!
 
 ## Congratulations, you are ready for the next Lab!
 
