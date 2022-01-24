@@ -8,7 +8,7 @@ What we will do is to execute the queries against MDS and MySQL HeatWave to comp
 Estimated lab time: 10 minutes
 
 ### Task 1: Execute Query 1
-Query 1: Find per-company average age of passengers from Switzerland, Italy and France
+Query 1: Find per-country average age of passengers from Switzerland, Italy and France
 
 ```
 mysqlsh --user=admin --password=**PASSWORD** --host=<mysql_private_ip_address> --port=3306 --sql
@@ -63,7 +63,7 @@ This query will now take less than 1s to execute, record the response time for c
 
 ### Task 2: Execute Query 2
 
-Query 2: Find top 10 companies selling the biggest amount of tickets for planes taking off from US airports. Run Pricing Summary Report Query:
+Query 2: Find top 10 airlines selling the most tickets for planes taking off from US airports. Run Pricing Summary Report Query:
 
 ```
 mysqlsh --user=admin --password=**PASSWORD** --host=<mysql_private_ip_address> --port=3306 --sql
@@ -117,7 +117,7 @@ This query will now take less than 1s to execute, record the response time for c
 
 ### Task 3: Execute Query 3
 
-Query 3: Give me the number of bookings that Neil Armstrong and Buzz Aldrin made for a price of > $400.00
+Query 3: Find the number of bookings that Neil Armstrong and Buzz Aldrin made for a price of > $400.00
 
 ```
 mysqlsh --user=admin --password=**PASSWORD** --host=<mysql_private_ip_address> --port=3306 --sql
