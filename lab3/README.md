@@ -83,7 +83,7 @@ mysqlsh --user=admin --password=**PASSWORD** --host=<mysql_private_ip_address> -
 
 We will first simulate the data loading to make sure that we are able to load the data without any errors. Note the flag **dryRun** to simulate the data loadning without executing the actual data loading
 ```
-util.loadDump("/home/opc/airport-db", {dryRun: true, resetProgress:true, ignoreVersion:true})
+util.loadDump("/home/opc/airport-db", {dryRun: true, threads: 8, resetProgress:true, ignoreVersion:true})
 ```
 ![Load DryRun](images/load-dryrun.png)
 
