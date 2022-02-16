@@ -67,16 +67,10 @@ ls
 5. If you did not note down the private ip of **MDSInstance**
 ![MDS Private IP](images/MDS-IP.png)
 
-6. Connect to MDS instance. Update password (default: Oracle#123) and host (same as MDS host private IP address). We will first install the mysql shell utility and then start the data import
+6. Connect to MDS instance. Update password (default: Oracle#123) and host (same as MDS host private IP address). 
 
 ```
-cd /home/opc/airport-db
-sudo yum install -y mysql-shell
-```
-![mysql shell isntall](images/mysqlsh-install.png)
-
-```
-mysqlsh --user=admin --password=**PASSWORD** --host=<mysql_private_ip_address> --port=3306 --js
+mysqlsh --user=admin --password=<password> --host=<mysql_private_ip_address> --port=3306 --js
 ```
 
 7. Load data 
@@ -104,7 +98,7 @@ It will take about 5-10 minutes to complete the data loading on our provisioned 
 Now that we have imported the airportdb data, lets verify the database
 
 ```
-mysqlsh --user=admin --password=**PASSWORD** --host=<mysql_private_ip_address> --port=3306 --sql
+mysqlsh --user=admin --password=<password> --host=<mysql_private_ip_address> --port=3306 --sql
 ```
 ```
 show databases;
